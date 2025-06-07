@@ -1,0 +1,173 @@
+Facture numéro : (vous generer automatiquement )
+               Police Aptos 
+               Taille 12 
+               Bold
+               noir
+06/2025
+               Police Aptos 
+               Taille 12 
+               noir
+
+Date :         (je le saisie dans le formulaire )
+               Police Aptos 
+               Taille 12 
+               Bold
+               noir
+20/05/2025
+               Police Aptos 
+               Taille 12 
+               noir
+
+ESAQ           (Je le saisie dans le formulaire)
+               Police Aptos 
+               Taille 14
+               Bold
+               noir
+Adresse :      (je le saisie dans le formulaire )
+
+               Police Aptos 
+               Taille 11
+               Bold
+               noir
+
+
+
+
+
+
+
+
+Quartier les Crêtes, N°70, Rue N°7, Lot Tazi et Miloud
+Casablanca 20150
+
+               Police Aptos 
+               Taille 11
+               noir
+
+ICE :  001589428000087  (je le saisie dans le formulaire )
+
+               Police Aptos 
+               Taille 11
+               Bold
+               noir
+
+
+Désignation	Nbre jours	Prix unitaire	Total
+
+
+               Police Aptos 
+               Taille 12
+               Bold
+               
+
+•	Formation intervention en espaces confinés
+
+	1,5 
+
+	2500
+
+	3750
+
+               Police Aptos 
+               Taille 12
+               
+
+Les 14 et 15 mai 2025
+               
+
+               Police Aptos 
+               Taille 10.5
+               Bold
+
+
+Montant en dirhams exonéré de la TVA1	Total Net à payer 	3750
+
+
+               Police Calibri (Body) 
+               Taille 11
+
+               
+ARRETE LA PRESENTE FACTURE A LA SOMME DE 
+
+
+               Police Calibri (Body) 
+               Taille 11
+               
+
+: #Trois milles sept cent cinquante dirhams#
+
+               Police Arial 
+               Taille 11
+               
+
+
+Attijariwafa Bank RIB : 007780000389800030411607
+
+
+               Police Arial 
+               Taille 11
+               Bold
+
+
+Signature :
+
+
+               Police Calibri (Body) 
+               Taille 11
+
+                                                                  Footer : 
+
+
+ Art 91 – II – 1° du Code Général des Impôts.
+
+
+               Police Calibri
+               Taille 8
+
+---------------------------------------------------------------------------------------------------------------------------
+               
+               Arial (Body CS)
+               Taille 11
+
+
+
+Auto Entrepreneur :                     
+Adresse :                        
+ICE          :                        
+IF            :                        
+CNIE :                                             
+Taxe professionnelle N° :          
+Mail :                         
+TEL   :                         
+
+
+               Calibri (Body)
+               Taille 9
+
+
+
+WADI Youssef
+et les autres info ... 
+
+               Aptos 
+               Taille 9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
