@@ -323,6 +323,62 @@ const formatNumber = (number) => {
 
 // Fonction utilitaire pour formater le montant en texte
 const formatMontantEnTexte = (montant) => {
-  // Simplification - à améliorer avec une vraie conversion nombre -> texte
-  return `${montant.toLocaleString('fr-FR')} mille dirhams`;
+  const partieEntiere = Math.floor(montant);
+  const texte = nombreEnLettres(partieEntiere);
+  return `${texte} dirhams`;
+};
+
+// Fonction pour convertir un nombre en texte en français
+const nombreEnLettres = (nombre) => {
+  const unites = ['', 'un', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf', 'dix', 'onze', 'douze', 'treize', 'quatorze', 'quinze', 'seize', 'dix-sept', 'dix-huit', 'dix-neuf'];
+  const dizaines = ['', 'dix', 'vingt', 'trente', 'quarante', 'cinquante', 'soixante', 'soixante-dix', 'quatre-vingt', 'quatre-vingt-dix'];
+  
+  if (nombre === 0) return 'zéro';
+  
+  let texte = '';
+  
+  // Traitement des millions
+  if (nombre >= 1000000) {
+    const millions = Math.floor(nombre / 1000000);
+    texte += (millions === 1) ? 'un million ' : nombreEnLettres(millions) + ' millions ';
+    nombre %= 1000000;
+  }
+  
+  // Traitement des milliers
+  if (nombre >= 1000) {
+    const milliers = Math.floor(nombre / 1000);
+    texte += (milliers === 1) ? 'mille ' : nombreEnLettres(milliers) + ' mille ';
+    nombre %= 1000;
+  }
+  
+  // Traitement des centaines
+  if (nombre >= 100) {
+    const centaines = Math.floor(nombre / 100);
+    texte += (centaines === 1) ? 'cent ' : nombreEnLettres(centaines) + ' cent ';
+    nombre %= 100;
+  }
+  
+  // Traitement des dizaines et unités
+  if (nombre > 0) {
+    if (nombre < 20) {
+      texte += unites[nombre];
+    } else {
+      const dizaine = Math.floor(nombre / 10);
+      const unite = nombre % 10;
+      
+      if (dizaine === 7 || dizaine === 9) {
+        texte += dizaines[dizaine - 1] + '-';
+        texte += (unite === 1) ? 'et-' + unites[unite + 10] : unites[unite + 10];
+      } else {
+        texte += dizaines[dizaine];
+        if (unite > 0) {
+          texte += (unite === 1 && dizaine !== 8) ? '-et-un' : '-' + unites[unite];
+        } else if (dizaine === 8) {
+          texte += 's';
+        }
+      }
+    }
+  }
+  
+  return texte.trim();
 };
